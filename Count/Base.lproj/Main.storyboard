@@ -16,10 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cachedImage.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="Gxp-I9-5jB">
-                                <rect key="frame" x="0.0" y="31" width="375" height="434"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srD-ys-glZ">
+                                <rect key="frame" x="50" y="50" width="275" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXo-ah-mbu">
                                 <rect key="frame" x="228" y="424" width="90" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -53,17 +55,6 @@
                                     <action selector="waru" destination="BYZ-38-t0r" eventType="touchUpInside" id="SiU-LQ-4eQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeL-Ir-wei">
-                                <rect key="frame" x="228" y="505" width="90" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="71"/>
-                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
-                                <state key="normal" title="-"/>
-                                <connections>
-                                    <action selector="minus" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGj-Rv-QHM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gId-YJ-qWE">
                                 <rect key="frame" x="76" y="588" width="242" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -75,18 +66,31 @@
                                     <action selector="clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUu-7g-q2E"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srD-ys-glZ">
-                                <rect key="frame" x="175" y="59" width="24.5" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeL-Ir-wei">
+                                <rect key="frame" x="228" y="505" width="90" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="71"/>
+                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="minus" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGj-Rv-QHM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="カレー.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZMM-Kl-0Fd">
+                                <rect key="frame" x="10" y="-3" width="355" height="561"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZMM-Kl-0Fd" secondAttribute="trailing" constant="10" id="0xm-Rn-lPH"/>
+                            <constraint firstItem="srD-ys-glZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Azb-ib-bzu"/>
+                            <constraint firstItem="ZMM-Kl-0Fd" firstAttribute="top" secondItem="srD-ys-glZ" secondAttribute="bottom" constant="-100" id="BAp-DL-X6p"/>
+                            <constraint firstItem="ZMM-Kl-0Fd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="BQS-rQ-wp4"/>
                             <constraint firstItem="srD-ys-glZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D7f-Mx-MLC"/>
-                            <constraint firstItem="srD-ys-glZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qDE-GR-scL"/>
+                            <constraint firstItem="srD-ys-glZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="JX9-Wv-AKU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="srD-ys-glZ" secondAttribute="trailing" constant="50" id="TOD-2v-CR5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -99,7 +103,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cachedImage.PNG" width="2048" height="1364"/>
+        <image name="カレー.jpg" width="750" height="561"/>
         <systemColor name="quaternaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

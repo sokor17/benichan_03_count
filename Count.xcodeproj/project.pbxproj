@@ -15,7 +15,7 @@
 		E3B97F9E264AD79500B9C3F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B97F9C264AD79500B9C3F4 /* LaunchScreen.storyboard */; };
 		E3B97FA9264AD79600B9C3F4 /* CountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B97FA8264AD79600B9C3F4 /* CountTests.swift */; };
 		E3B97FB4264AD79600B9C3F4 /* CountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B97FB3264AD79600B9C3F4 /* CountUITests.swift */; };
-		E3B97FC2264AD90300B9C3F4 /* cachedImage.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E3B97FC1264AD90200B9C3F4 /* cachedImage.PNG */; };
+		E3C0E7D5264C55E800D28F98 /* カレー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3C0E7D4264C55E800D28F98 /* カレー.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		E3B97FAF264AD79600B9C3F4 /* CountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B97FB3264AD79600B9C3F4 /* CountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountUITests.swift; sourceTree = "<group>"; };
 		E3B97FB5264AD79600B9C3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3B97FC1264AD90200B9C3F4 /* cachedImage.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cachedImage.PNG; path = "../../../../../書類(mac)/etc/画像/好きな画像/cachedImage.PNG"; sourceTree = "<group>"; };
+		E3C0E7D4264C55E800D28F98 /* カレー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "カレー.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 		E3B97F90264AD78700B9C3F4 /* Count */ = {
 			isa = PBXGroup;
 			children = (
-				E3B97FC1264AD90200B9C3F4 /* cachedImage.PNG */,
+				E3C0E7D4264C55E800D28F98 /* カレー.jpg */,
 				E3B97F91264AD78700B9C3F4 /* AppDelegate.swift */,
 				E3B97F93264AD78700B9C3F4 /* SceneDelegate.swift */,
 				E3B97F95264AD78700B9C3F4 /* ViewController.swift */,
@@ -235,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3B97F9E264AD79500B9C3F4 /* LaunchScreen.storyboard in Resources */,
-				E3B97FC2264AD90300B9C3F4 /* cachedImage.PNG in Resources */,
+				E3C0E7D5264C55E800D28F98 /* カレー.jpg in Resources */,
 				E3B97F9B264AD79500B9C3F4 /* Assets.xcassets in Resources */,
 				E3B97F99264AD78700B9C3F4 /* Main.storyboard in Resources */,
 			);
